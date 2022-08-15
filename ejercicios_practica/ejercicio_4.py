@@ -25,7 +25,13 @@ if __name__ == '__main__':
     # TIP: Recomendamos ver el método "isdigit" de strings
     # para aplicar en este caso.
     list_numeros_str = ['5', '2', '3', '', '7', 'NaN']
+    lista = [x for x in list_numeros_str]
+    print(lista)
+    
 
+    #lista_1 = [x for x in list_numeros_str if x.isdight() is True]
+
+    lista_1=([int(x) for x in list_numeros_str if ((x == 'NaN' and x == '') == 0). isdigit()])
 
     # ¿Ya terminaron el ejercicio? ¿Por qué no prueban
     # hacer negativo alguno de los números de la lista?

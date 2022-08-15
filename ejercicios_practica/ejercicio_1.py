@@ -34,7 +34,24 @@ if __name__ == '__main__':
 
     # Lista de numeros
     numeros = [1, -5, 4, 3]
+# Realizar una funcion lambda que eleve al cuadrado
+    # el número pasado como parámetro
+poten_1 = lambda x: x**2
+for i in numeros:
+    print(poten_1(i))
 
-    # numeros_potencia = list(map....)
+potencia_1 = lambda x: x**2
+print(potencia_1(1))
 
-    print("terminamos")
+potencia_2 = lambda x: x**2
+print(potencia_1(-5))
+potencia_3 = lambda x: x**2
+print(potencia_1(4))
+potencia_4 = lambda x: x**2
+print(potencia_1(3))
+
+
+potencia_lambda = list(map(lambda x: x**2, numeros))
+print(potencia_lambda)
+
+print("terminamos")

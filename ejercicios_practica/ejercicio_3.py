@@ -19,7 +19,9 @@ if __name__ == '__main__':
     # esta lista generada deberá tener un tamaño de 11
     # números, conteniendo del 0 al 10 inclusive
 
-    # lista_0_10 = [......]
+    lista_0_10 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    num_comp = [1*x for x in lista_0_10]
+    print(num_comp)
 
     # 2)
     # Generar una lista a partir de comprensión de listas,
@@ -32,7 +34,9 @@ if __name__ == '__main__':
     # del 0 al 10 (como el ejer anterior) pero que cada
     # elemento lo multipliquen x5.
 
-    # tabla_5 = [......]
+    tabla_5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    mult_comp = [5*x for x in lista_0_10]
+    print(mult_comp)
 
     # 3)
     # Generar una lista a partir de comprensión de listas,
@@ -43,6 +47,10 @@ if __name__ == '__main__':
     # o randint para generar números aleatorios.
     # https://docs.python.org/3/library/random.html
 
-    # dias_mes = [.....]
+    import random
+
+    dias_mes = [random.randint(1, 30) for x in range(12)]
+    print(dias_mes)
+
 
     print("terminamos")

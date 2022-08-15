@@ -13,10 +13,10 @@
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    # Utilizar comprensión de listas para filtrar
+    # Utilizar comprensión de listas para filtrar 
 
     accesos = [10, 50, 7, 5, 15, 25, 3, 4, 13]
-
+    import random
     # La lista accesso contiene los números de ID de personal
     # que ingresaron por ese molinete
 
@@ -28,18 +28,21 @@ if __name__ == '__main__':
     # De la lista resultante informar cuantas personas/personal
     # comprendido en dicho rango pasó por ese molinete
 
-    # personal_1_10 = [.....]
-
+    personal_1_10 = [1*x for x in range(1, 10) ]
+    
+    print (personal_1_10)
+    personal_1_10_1 = [len(x) for x in personal_1_10]
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
     # cuyo ID de personal esté dentro de los ID válidos para ingresar
     # por ese molinete:
     id_validos = [3, 4, 7, 8, 15]
+
+
     # Debe generar una nueva lista basada en "accesos" filtrada por los ID
     # aprobados en "id_validos".
     # TIP: Utilizar el operador "in" para chequear si un ID de accesos está
     # dentro de "id_validos"
-
-    # personal_valido = [.....]
-
+    personal_valido = [n + 0 if n <= 15 else n for n in id_validos]
+    print(personal_valido)
     print("terminamos")
